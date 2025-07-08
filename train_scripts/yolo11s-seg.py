@@ -1,12 +1,18 @@
 from ultralytics import YOLO
 
-model = YOLO('weights/yolo11s-seg.pt')
-model.train(
-    data='configs/yolo11s_seg.py',
-    epochs=100,
-    imgsz=640,
-    batch=16,
-    project='results/yolo11s',
-    verbose=True,
-    name='run'
-)
+def main():
+    model = YOLO('weights/yolo11s-seg.pt')
+    model.train(
+        data=r'C:\Users\dalab\Desktop\azimjaan21\RESEARCH\glove_seg\data\yolo\gloves.yaml',
+        epochs=100,
+        imgsz=640,
+        batch=16,
+        project='results/yolo11s',
+        verbose=True,
+        name='run'
+    )
+
+if __name__ == '__main__':
+    import multiprocessing
+    multiprocessing.freeze_support() 
+    main()
