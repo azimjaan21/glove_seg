@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+data/
+seg_venv/
+weights/
+results/
+logs/
+.DS_Store
+.env
+*.pth
+*.pt
