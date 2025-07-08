@@ -4,7 +4,7 @@ def main():
     model = YOLO('weights/yolov8s-seg.pt')
     model.train(
         data=r'C:\Users\dalab\Desktop\azimjaan21\RESEARCH\glove_seg\data\yolo\gloves.yaml',
-        epochs=100,
+        epochs=50,
         imgsz=640,
         batch=8,
         project='results/yolov8s',
