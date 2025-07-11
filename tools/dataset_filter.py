@@ -3,8 +3,8 @@
 import os
 
 # Set paths
-images_dir = r"C:\Users\dalab\Desktop\azimjaan21\RESEARCH\glove_seg\eval_dataset\multimodal\valid_img"
-labels_dir = r"C:\Users\dalab\Desktop\azimjaan21\RESEARCH\glove_seg\eval_dataset\multimodal\valid\labels"
+images_dir = r"C:\Users\dalab\Desktop\azimjaan21\RESEARCH\glove_seg\eval_dataset\multimodal\images"
+labels_dir = r"C:\Users\dalab\Desktop\azimjaan21\RESEARCH\glove_seg\eval_dataset\multimodal\labels"
 
 # Get base filenames
 image_basenames = {os.path.splitext(f)[0] for f in os.listdir(images_dir) if f.lower().endswith(('.jpg', '.jpeg', '.png'))}

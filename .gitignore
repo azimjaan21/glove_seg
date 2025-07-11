@@ -12,3 +12,4 @@ logs/
 *.txt
 eval_dataset/
 runs/
+multimodal_fusion_experiments/
