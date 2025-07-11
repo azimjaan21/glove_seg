@@ -9,3 +9,5 @@ logs/
 .env
 *.pth
 *.pt
+*.txt
+eval_dataset
