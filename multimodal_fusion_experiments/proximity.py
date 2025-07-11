@@ -17,7 +17,7 @@ DISTANCE_THRESHOLD = 40
 IOU_THRESHOLD = 0.5
 
 # Paths
-dataset_path = "C:/Users/dalab/Desktop/azimjaan21/my_PAPERS/AAAI/dataset_july2/valid"
+dataset_path = "C:/Users/dalab/Desktop/azimjaan21/RESEARCH/glove_seg/eval_dataset/multimodal"
 image_folder = os.path.join(dataset_path, "images")
 label_folder = os.path.join(dataset_path, "labels")
 save_folder = "exp3_results[40]"
@@ -25,7 +25,7 @@ os.makedirs(save_folder, exist_ok=True)
 
 # Load Models
 pose_model = YOLO("weights/yolo11s-pose.pt")
-segmentation_model = YOLO( r"C:\Users\dalab\Desktop\azimjaan21\RESEARCH\glove_seg\results\yolo11s\run\weights\best.pt.pt")
+segmentation_model = YOLO( r"C:\Users\dalab\Desktop\azimjaan21\RESEARCH\glove_seg\results\yolo11s\run\weights\best.pt")
 
 # ------------------ Helper Functions ------------------ #
 
